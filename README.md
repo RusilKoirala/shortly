@@ -52,7 +52,7 @@ A modern, full-stack URL shortener built with the MERN stack. Instantly shorten 
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/shortly-mern.git
+git clone https://github.com/rusilkoirala/shortly.git
 cd shortly-mern
 ```
 

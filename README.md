@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/rusilkoirala/shortly/actions"><img src="https://img.shields.io/github/actions/workflow/status/rusilkoirala/shortly/ci.yml?branch=main&label=build" alt="Build Status"></a>
+
   <a href="./LICENSE"><img src="https://img.shields.io/github/license/rusilkoirala/shortly?color=blue" alt="License"></a>
   <a href="https://github.com/rusilkoirala/shortly/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
   <a href="https://github.com/rusilkoirala/shortly/stargazers"><img src="https://img.shields.io/github/stars/rusilkoirala/shortly?style=social" alt="GitHub stars"></a>

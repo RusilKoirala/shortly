@@ -20,7 +20,7 @@ A modern, full-stack URL shortener built with the MERN stack. Instantly shorten 
 
 ---
 
-## 🚀 Tech Stack
+##  Tech Stack
 - **MongoDB** – Database for users and links
 - **Express.js** – REST API backend
 - **React** – Frontend SPA
@@ -32,15 +32,15 @@ A modern, full-stack URL shortener built with the MERN stack. Instantly shorten 
 
 ---
 
-## ✨ Features
-- 🔗 **Shorten long URLs** with a single click
-- 🔐 **User authentication** (register/login) with JWT
-- 📋 **View all your created links** in a beautiful dashboard
-- 📎 **Copy short URLs** with one click
-- 🚀 **Redirect** instantly via short URL (e.g. `/abc12`)
-- 🗑️ **Delete your own links** (only the owner can delete)
-- 🛡️ **Secure routes** for user data and link management
-- 🌑 **Dark mode** UI, fully responsive and minimal
+##  Features
+-  **Shorten long URLs** with a single click
+-  **User authentication** (register/login) with JWT
+-  **View all your created links** in a beautiful dashboard
+-  **Copy short URLs** with one click
+-  **Redirect** instantly via short URL (e.g. `/abc12`)
+-  **Delete your own links** (only the owner can delete)
+-  **Secure routes** for user data and link management
+-  **Dark mode** UI, fully responsive and minimal
 
 ---
 
@@ -84,7 +84,7 @@ npm run dev
 
 ---
 
-## 📚 API Endpoints
+##  API Endpoints
 
 ### Auth
 - `POST   /api/auth/register` – Register a new user
@@ -100,7 +100,7 @@ npm run dev
 
 ---
 
-## 📁 Folder Structure
+##  Folder Structure
 ```
 shortly/
   backend/
@@ -128,7 +128,7 @@ shortly/
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! To contribute:
 1. Fork this repository

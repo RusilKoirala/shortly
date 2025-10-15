@@ -12,9 +12,15 @@ import cookieParser from 'cookie-parser';
 const app = express();
 dotenv.config();
 
-// Middleware
+// In production hosts (Render) the app may be behind a proxy — enable trust proxy so secure cookies work correctly
+if (process.env.NODE_ENV === 'production') {
+  app.set('trust proxy', 1);
+}
+
+// Middleware: allow origin to be configured via CLIENT_URL env var (useful for Netlify frontend)
+const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173';
 app.use(cors({
-    origin: 'http://localhost:5173', 
+    origin: CLIENT_URL,
     credentials: true
 }));
 app.use(express.json());
@@ -39,7 +45,9 @@ app.get('/', (req, res) => {
 });
 
 // I love port 5000
-app.listen(process.env.PORT || 5001, () => {
-    connectDB();
-    console.log(`✅ Server is running on http://localhost:${process.env.PORT || 5001}`);
+// Start server
+const PORT = process.env.PORT || 5001;
+app.listen(PORT, () => {
+  connectDB();
+  console.log(`✅ Server is running on port ${PORT}`);
 })

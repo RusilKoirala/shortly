@@ -1,8 +1,11 @@
 import axios from 'axios';
 
+// Use Vite environment variable for API base URL in production (Netlify). Fallback to local backend for dev.
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+
 const instance = axios.create({
-    baseURL: 'http://localhost:5000/api', 
-    withCredentials: true, // LETSSSS EAT SOME COOKIES
+    baseURL: API_BASE,
+    withCredentials: true, // allow cookies to be sent between frontend and backend
 
 })
 

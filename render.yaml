@@ -3,7 +3,7 @@ services:
     name: shortly-backend
     repo: https://github.com/rusilkoirala/shortly
     branch: main
-    root: backend
+    rootDir: backend
     runtime: node
     region: Singapore
     plan: free
@@ -23,7 +23,7 @@ services:
         value: "production"
         sensitive: false
       - name: COOKIE_DOMAIN
-        value: "https://projectshortly.netlify.app"
+        value: "projectshortly.netlify.app"
         sensitive: true
 
 # Notes:

@@ -77,11 +77,11 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="relative w-full flex flex-col items-center justify-center">
-      <div className="backdrop-blur-xl bg-black dark:bg-black rounded-2xl shadow-2xl p-8 max-w-3xl w-full mx-auto mb-8 border border-white/10 mt-12">
+    <div className="relative w-full flex flex-col items-center justify-center pt-8">
+      <div className="backdrop-blur-xl bg-black dark:bg-black rounded-2xl shadow-2xl p-10 max-w-3xl w-full mx-auto mb-6 border border-white/10 mt-20">
         {/* Hero/Info Section */}
         <div className="mb-10 animate-fadein">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-2 text-center font-satoshi text-white">Your Links Dashboard</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center font-satoshi text-white">Your Links Dashboard</h2>
           <p className="text-gray-300 text-center mb-2 font-inter text-lg">Shorten, manage, and share your links with ease. All your links are listed below. Click the copy button to share your short URL instantly!</p>
           <div className="flex justify-center mb-2">
             <span className="inline-block bg-gray-800 text-gray-200 px-4 py-1 rounded-full text-xs font-mono tracking-wide animate-pulse">New: Copy your short URL with one click!</span>

@@ -10,7 +10,7 @@ const Home = () => {
     document.documentElement.classList.add('dark');
   }, []);
   return (
-    <div className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden bg-black font-geist">
+    <div className="pt-3 relative min-h-screen flex flex-col justify-center items-center overflow-hidden bg-black font-geist">
       {/* Subtle grid background, always dark */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <svg className="w-full h-full opacity-10" style={{filter:'blur(1px)'}} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100" preserveAspectRatio="none">

@@ -3,21 +3,27 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import { AuthProvider } from './context/AuthContext';
 import Profile from './pages/Profile.jsx';
 
 function App() {
   return (
     <AuthProvider>
-      <Navbar />
-      <Routes>
+      <div className="min-h-screen flex flex-col bg-black">
+        <Navbar />
+        <main className="flex-1 pt-1">
+          <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/links" element={<h1>Links Page</h1>} />
         <Route path="/links/:id" element={<h1>Link Details</h1>} />
-      </Routes>
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </AuthProvider>
   );
 }

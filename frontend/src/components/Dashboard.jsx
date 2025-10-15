@@ -38,6 +38,10 @@ const Dashboard = () => {
     // eslint-disable-next-line
   }, []);
 
+  // Determine backend base URL from VITE_API_URL (strip trailing /api if present)
+  const configuredApi = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+  const backendBase = configuredApi.replace(/\/api\/?$/i, '');
+
   const handleCreate = async (e) => {
     e.preventDefault();
     setCreating(true);
@@ -65,7 +69,7 @@ const Dashboard = () => {
   };
 
   const handleCopy = (shortUrl) => {
-    const fullUrl = `http://localhost:5000/${shortUrl}`;
+    const fullUrl = `${backendBase}/${shortUrl}`;
     navigator.clipboard.writeText(fullUrl);
     setCopiedId(shortUrl);
     toast.success("Copied to clipboard!");
@@ -132,7 +136,7 @@ const Dashboard = () => {
                 {links.map((link) => (
                   <tr key={link._id} className="border-b border-gray-800 hover:bg-zinc-800/70 transition group">
                     <td className="py-2 px-4 font-inter text-white text-lg font-bold flex items-center gap-2">
-                      <a href={`http://localhost:5000/${link.shortUrl}`} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-blue-400 transition">
+                      <a href={`${backendBase}/${link.shortUrl}`} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2 hover:text-blue-400 transition">
                         {link.shortUrl}
                       </a>
                       <button

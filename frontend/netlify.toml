@@ -3,4 +3,4 @@
   publish = "dist"
 
 [context.production.environment]
-  VITE_API_URL = "https://your-backend.onrender.com/api"
+  VITE_API_URL = "https://shortly-t8r4.onrender.com/api"
